@@ -42,7 +42,10 @@ Pour compiler les différents exécutables il faut taper les commandes suivantes
 
 ==== Organisation de l'archive ====
 
-./bin - repertoire contenant les exécutables
+./bin - repertoire contenant les exécutables 
+(petite préscision pour les executables avant de les lancer 
+dans le répertoire courant faudras bien veiller a faire un
+chmod -R u+x ./bin car les droits d'execution ne sont pas données directement)
 
 ./data - répertoire contenant les différents assets de notre application notament des images 
 

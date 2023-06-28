@@ -32,6 +32,10 @@ r - tir
 Pour compiler les différents exécutables il faut taper les commandes suivantes:
 
 ./bin/sdl - pour lancer le jeu en mode graphique
+(petite préscision pour les executables avant de les lancer 
+dans le répertoire courant faudra bien veiller à faire un
+"chmod -R u+x ./bin" car les droits d'execution ne sont pas données directement)
+
 ./bin/texte - pour lancer le jeu en mode texte
 ./bin/testArme - pour lancer le test de regression de la classe Arme
 ./bin/testEnn - pour lancer le test de regression de la classe Ennemi
@@ -43,9 +47,6 @@ Pour compiler les différents exécutables il faut taper les commandes suivantes
 ==== Organisation de l'archive ====
 
 ./bin - repertoire contenant les exécutables 
-(petite préscision pour les executables avant de les lancer 
-dans le répertoire courant faudras bien veiller a faire un
-chmod -R u+x ./bin car les droits d'execution ne sont pas données directement)
 
 ./data - répertoire contenant les différents assets de notre application notament des images 
 

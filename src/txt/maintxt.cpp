@@ -101,6 +101,8 @@ void afficherboucle(Jeu& jeu)
 			case 'r' :
 				jeu.ActionClavier('r');
 				break;
+			case 'o':
+				ok = false;
 		}
 	} while (ok);
 

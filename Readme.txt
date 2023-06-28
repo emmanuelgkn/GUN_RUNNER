@@ -20,6 +20,7 @@ q - deplacement à gauche
 d - deplacement à droite
 z - saut
 r - tir
+o - pour quitter
 
 En mode graphique:
 
@@ -28,6 +29,7 @@ DROITE - déplacement à droite
 GAUCHE - dépalcement à gauche
 HAUT - saut
 r - tir
+q - pour quitter
 
 Pour compiler les différents exécutables il faut taper les commandes suivantes:
 

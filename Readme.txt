@@ -20,7 +20,7 @@ q - deplacement à gauche
 d - deplacement à droite
 z - saut
 r - tir
-o - pour quitter
+x - pour quitter
 
 En mode graphique:
 

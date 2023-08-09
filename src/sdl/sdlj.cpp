@@ -265,7 +265,6 @@ SDL_Texture* SDLSimple::chargerTexture(SDL_Renderer* renderer, const char* fichi
 void SDLSimple::sdlAff()
 {
     SDL_RenderClear(renderer);
-
     if (etatMenu == MenuPrincipal) {
         // Afficher un écran noir pour le menu d'accueil
       //SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
@@ -392,6 +391,7 @@ void SDLSimple::sdlBoucle()
     Uint32 t = SDL_GetTicks(), nt;
     int compteur = 0;
 
+    etatMenu = MenuPrincipal;
     bool jeuEnCours = false; // Ajout d'une variable pour gérer l'état du jeu
 
     // tant que ce n'est pas la fin ...
@@ -477,3 +477,5 @@ void SDLSimple::sdlBoucle()
         SDL_RenderPresent(renderer);
     }
 }
+
+

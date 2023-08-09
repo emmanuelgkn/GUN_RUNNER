@@ -1,7 +1,18 @@
-CC = g++
-CFLAGS = -Wall -ggdb
-INCLUDE_DIR_SDL = -ISDL2
-SDL_EXT = -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+	CC = g++
+	CFLAGS = -Wall -ggdb
+	INCLUDE_DIR_SDL = -ISDL2
+	SDL_EXT = -lSDL2 -lSDL2_image -lSDL2_ttf
+
+else
+	CC = clang++
+	CFLAGS = -std=c++11 -Wall -ggdb
+	INCLUDE_DIR_SDL = -I/opt/homebrew/include
+	SDL_EXT = -L/opt/homebrew/lib -lSDL2 -lSDL2_image -lSDL2_ttf
+
+endif
+
 OBJ_FILES = ./obj/Vec2.o ./obj/Projectile.o ./obj/Arme.o ./obj/Personnage.o ./obj/Jeu.o ./obj/Terrain.o ./obj/winTxt.o ./obj/sdlj.o ./obj/Ennemi.o
 
 all: ./bin/sdlj ./bin/texte ./bin/testTer ./bin/testProj ./bin/testPers ./bin/testJeu ./bin/testEnn ./bin/testArme

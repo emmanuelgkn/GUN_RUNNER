@@ -9,7 +9,6 @@ Projectile::Projectile()
     distance_parcourue = 0;
 }
 
-
 Projectile::Projectile(int c)
 {
     assert(c == 0 || c == 1);

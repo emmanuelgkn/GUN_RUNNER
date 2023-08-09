@@ -11,7 +11,7 @@ class Projectile {
         Vec2 vitesse;
         ///@brief distance parcourue par le projectile
         int distance_parcourue;
-    public:
+        public:
         ///@brief direction du projectile
         bool direction;
         ///@brief constructeur de la classe projectile

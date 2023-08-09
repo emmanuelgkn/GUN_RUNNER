@@ -7,7 +7,7 @@ ID PROJET - 28479
 
 ======== Description ==========
 
-Gun runner est un jeu de plateforme sur linux, Le but du jeu est d'éliminer 
+Gun runner est un jeu de plateforme sur linux et MacOs, Le but du jeu est d'éliminer 
 tout les ennemis présent sur la map sans se faire tuer par les nombreux 
 obstacles (et les ennemis). 
 
@@ -37,6 +37,7 @@ Pour compiler les différents exécutables il faut taper les commandes suivantes
 (petite préscision pour les executables avant de les lancer 
 dans le répertoire courant faudra bien veiller à faire un
 "chmod -R u+x ./bin" car les droits d'execution ne sont pas données directement)
+(*oubliez pas de faire un make clean, suivi d'un make avant de lancer les executables)
 
 ./bin/texte - pour lancer le jeu en mode texte
 ./bin/testArme - pour lancer le test de regression de la classe Arme

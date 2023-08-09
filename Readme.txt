@@ -7,7 +7,7 @@ ID PROJET - 28479
 
 ======== Description ==========
 
-Gun runner est un jeu de plateforme sur linux et MacOs (avec puce Apple Silicon), Le but du jeu est d'éliminer 
+Gun runner est un jeu de plateforme sur linux et MacOs (avec puce Apple Silicon) codé avec la librairie SDL, Le but du jeu est d'éliminer 
 tout les ennemis présent sur la map sans se faire tuer par les nombreux 
 obstacles (et les ennemis). 
 
